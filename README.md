@@ -20,8 +20,8 @@ source venv/bin/activate
 pip install aiohttp
 
 # Run tests against our http outbound module
-STRICT_LEVEL=1 python test.py http://localhost:3000/dt
+STRICT_LEVEL=1 python test.py http://localhost:3000/http
 
 # Run tests against our undici http client module
-STRICT_LEVEL=1 python test.py http://localhost:3000/http
+STRICT_LEVEL=1 python test.py http://localhost:3000/undici
 ```

@@ -6,7 +6,7 @@ const start = async() => {
   const fastify = require('fastify')({ logger: true })
   const { PORT = 3000, HOST = 'localhost' } = process.env
 
-  fastify.post('/dt', async (request, reply) => {
+  fastify.post('/undici', async (request, reply) => {
     const urls = request.body
     const outboundRequests = urls.map(({ url: uri, arguments: body }) => {
       const parsedUrl = url.parse(uri)
